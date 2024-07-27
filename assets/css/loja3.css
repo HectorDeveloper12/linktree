@@ -114,6 +114,9 @@
     .botoes button {
         width: 300px;
     }
+    .botoes button img {
+        width: 30px
+    }
     .acai1 img{
         display: none;
     }
