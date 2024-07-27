@@ -1,0 +1,139 @@
+
+.fundo {
+    position: fixed;
+    right: 0;
+    top: -120px;
+    z-index: -1000;
+}
+
+.fundo img {
+    width: 1250px;
+}
+
+
+.divisao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.acai img {
+    width: 600px;
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Ajuste a altura da flutuação */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*  */
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.botoes a{
+    text-decoration: none;
+}
+
+.botoes button p {
+    font-family: "Inter", sans-serif;
+    font-size: 38px;
+    padding-left: 10px;
+}
+
+.botoes button {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0px 10px;
+    flex-direction: row;
+    margin-bottom: 54px;
+    background: #fff;
+    border: none;
+    width: 685px;
+    height: 73.59px;
+    border-radius: 20px;
+
+    color: #722770;
+    box-shadow: 12px 11px 2.3px #722770;
+    transition: 0.5s ease-in-out;
+}
+
+.botoes button:hover{
+    background: #722770;
+    color: #fff;
+    box-shadow: 12px 11px 10px #00000065;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1357px) {
+    .divisao {
+        flex-direction: column;
+    }
+    .botoes button {
+        width: 400px;
+        margin-right: 30px;
+    }
+
+    .botoes button p {
+        font-size: 18px;
+    }
+    .acai {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .acai img {
+        
+        width: 40%;
+    }
+}
+
+@media (max-height: 800px) {
+    .divisao {
+        flex-direction: column;
+    }
+    .acai img {
+        display: none;
+    }
+}
+
+@media (max-height: 700px) {
+    .acai img {
+        display: none;
+    }
+    .botoes {
+        margin-bottom: 100px;
+        
+    }
+}
+
+
+@media (max-width: 800px) {
+    .botoes button {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    .botoes button img {
+        width: 30px;
+    }
+    .divisao {
+        flex-direction: column;
+    }
+    .acai img {
+        display: none;
+    }
+}
