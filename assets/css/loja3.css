@@ -1,0 +1,129 @@
+.divisao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.acai1 img{
+    width: 400px;
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+.acai2 img {
+    width: 450px;
+    position: relative;
+    top: -80px;
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Ajuste a altura da flutuação */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+.botoes a{
+    text-decoration: none;
+}
+
+.botoes button p {
+    font-family: "Inter", sans-serif;
+    font-size: 38px;
+    padding-left: 10px;
+}
+
+.botoes button {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0px 10px;
+    flex-direction: row;
+    margin-bottom: 54px;
+    background: #fff;
+    border: none;
+    width: 885px;
+    height: 73.59px;
+    border-radius: 20px;
+
+    color: #722770;
+    box-shadow: 12px 11px 10px #00000065;
+    transition: 0.5s ease-in-out;
+}
+
+.botoes button:hover{
+    background: #722770;
+    color: #fff;
+    box-shadow: 12px 11px 10px #00000065;
+    cursor: pointer;
+}
+
+@media (max-width: 1680px) {
+    .acai2 {
+        display: none;
+    }
+}
+
+@media (max-width: 1506px) {
+    .botoes {
+        padding: 0;
+    }
+    .botoes button {
+        width: 600px;
+    }
+}
+
+@media (max-width: 1081px) {
+    .divisao {
+        flex-direction: column;
+        margin-bottom: 90px;
+    }
+    .botoes button {
+        width: 400px;
+    }
+
+    .botoes button p {
+        font-size: 18px;
+
+    }
+    .acai1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .acai1 img{
+        width: 50%;
+    }
+}
+
+@media (max-width: 462px) {
+    .botoes button {
+        width: 300px;
+    }
+    .acai1 img{
+        display: none;
+    }
+}
+
+@media (max-height: 800px) {
+    .divisao {
+        flex-direction: column;
+    }
+    .acai1 img{
+        display: none;
+    }
+}

@@ -1,0 +1,159 @@
+
+.divisao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fruta {
+    position: fixed;
+    right: 60px;
+    top: -120px;
+}
+
+.fruta img {
+    width: 400px;
+}
+
+.content {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+.botoes a{
+    text-decoration: none;
+}
+
+.botoes button p {
+    font-family: "Inter", sans-serif;
+    font-size: 38px;
+    padding-left: 10px;
+}
+
+.botoes button {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0px 10px;
+    flex-direction: row;
+    margin-bottom: 54px;
+    background: #fff;
+    border: none;
+    width: 680px;
+    height: 73.59px;
+    border-radius: 20px;
+
+    color: #722770;
+    box-shadow: 12px 11px 10px #00000065;
+    transition: 0.5s ease-in-out;
+}
+
+.botoes button:hover{
+    background: #722770;
+    color: #fff;
+    box-shadow: 12px 11px 10px #00000065;
+    cursor: pointer;
+}
+
+
+/* tigelas */
+
+.tigelaesquerda {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    right: 550px;
+}
+.tigeladireita {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 140px;
+    right: 200px;
+}
+
+.tigelatop {
+    /* position: fixed; */
+    top: 100px;
+    animation: girar 20s linear infinite;
+}
+
+.tigelabottom {
+    position: relative;
+    right: -30px;
+    animation: girar 20s linear infinite;
+
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1601px) {
+    .botoes button {
+        width: 400px;
+    }
+
+    .botoes button p {
+        font-size: 20px;
+    }
+    .tigelaesquerda {
+    right: 300px;
+    top: 150px;
+
+    }
+    .tigeladireita {
+        right: 10px;
+    top: 200px;
+    }
+    
+    .acai img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1099px ) {
+    .botoes {
+        padding: 0px;
+    }
+        .botoes button {
+        width: 500px;
+    }
+
+    .content {
+        justify-content: center;
+    }
+    .divisao {
+        flex-direction: column;
+    }
+    .acai img {
+        display: none;
+    }
+}
+
+@media (max-width: 539px) {
+    .botoes button {
+        width: 300px;
+    }
+    .botoes button img {
+        width: 25px;
+    }
+    .botoes button p {
+        font-size: 18px;
+    }
+}
